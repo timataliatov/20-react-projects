@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",   // Accessibility linting for JSX
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y"                       // Accessibility plugin for JSX
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",         // Disables prop-types rule if using TypeScript or prefer not to use prop-types
+    "no-console": "warn",              // Warns on console.log to avoid forgetting them in production code
+    "jsx-a11y/no-autofocus": "warn"    // Helps catch accessibility issues
+  }
+}

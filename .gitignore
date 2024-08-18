@@ -1,0 +1,53 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+out/
+build/
+
+# Vite cache
+.vite/
+.vite/deps/
+.vite/build/
+
+# Tailwind CSS cache
+.tailwindcache/
+
+# PostCSS cache
+.postcssrc.cjs
+
+# ESLint cache
+.eslintcache
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+
+# Prettier cache
+.prettierignore
+
+# MacOS specific files
+*.DS_Store
+
+# Linux specific files
+*~
+
+# Windows specific files
+Thumbs.db
