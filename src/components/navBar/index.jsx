@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X, Sidebar } from 'lucide-react';
 
 const navItems = [
   {
@@ -82,7 +82,7 @@ const navItems = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ toggleTreeView }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
 
@@ -134,6 +134,12 @@ const Navbar = () => {
             <a href="#" className="text-xl font-bold text-gray-800">
               #20RC by TALIATOV
             </a>
+            <button
+              onClick={toggleTreeView}
+              className="ml-4 p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            >
+              <Sidebar className="h-6 w-6" />
+            </button>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
