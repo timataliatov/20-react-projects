@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './styles.css';
 
 const RandomColors = () => {
   const [hex, setHex] = useState('#ffffff');
