@@ -27,12 +27,14 @@ A lightning-fast ⚡ starter template for building modern React applications wit
 ### Setting Up Your Project
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/timataliatov/RVNT-tt-01.git your-project-name
    cd your-project-name
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -40,12 +42,15 @@ A lightning-fast ⚡ starter template for building modern React applications wit
    ```
 
 3. Set up your environment variables:
+
    ```bash
    cp .env.example .env
    ```
+
    Edit the `.env` file as needed.
 
 4. Start the development server:
+
    ```bash
    npm run dev
    # or
@@ -90,17 +95,20 @@ react-vite-tailwind-starter/
 ## 🧑‍💻 Development Workflow
 
 1. Create a new branch for your feature or bug fix:
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
 
 2. Make your changes and commit them:
+
    ```bash
    git add .
    git commit -m "Add your meaningful commit message here"
    ```
 
 3. Push your changes to GitHub:
+
    ```bash
    git push origin feature/your-feature-name
    ```
@@ -112,16 +120,19 @@ react-vite-tailwind-starter/
 To update your project with the latest changes from this starter:
 
 1. Add this repository as a remote:
+
    ```bash
    git remote add upstream https://github.com/timataliatov/RVNT-tt-01.git
    ```
 
 2. Fetch the latest changes:
+
    ```bash
    git fetch upstream
    ```
 
 3. Merge the changes into your main branch:
+
    ```bash
    git checkout main
    git merge upstream/main

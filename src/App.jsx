@@ -1,11 +1,15 @@
 import React from 'react';
+import Accordion from './components/accordion/index.jsx';
+import RandomColors from './components/randomColors/index.jsx';
 
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        React Vite Tailwind Starter
-      </h1>
+    <div className="">
+      {/* Accordion Component */}
+      {/* <Accordion /> */}
+
+      {/* RandomColors Component */}
+      <RandomColors />
     </div>
   );
 }
