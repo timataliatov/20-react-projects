@@ -3,8 +3,8 @@ import Navbar from './components/navBar/index.jsx';
 import Accordion from './components/accordion/index.jsx';
 import StarRating from './components/starRating/index.jsx';
 import RandomColors from './components/randomColors/index.jsx';
+import ImageSlider from './components/imageSlider/index.jsx';
 // Import other components as they become available
-// import ImageSlider from './components/imageSlider/index.jsx';
 // import LoadMoreButton from './components/loadMoreButton/index.jsx';
 // import TreeView from './components/treeView/index.jsx';
 // import ScrollIndicator from './components/scrollIndicator/index.jsx';
@@ -25,6 +25,13 @@ function App() {
         </div>
         <div id="color-generator">
           <RandomColors />
+        </div>
+        <div id="image-slider">
+          <ImageSlider
+            url={'https://picsum.photos/v2/list'}
+            page={1}
+            limit={10}
+          />
         </div>
       </main>
     </div>
