@@ -8,6 +8,7 @@ import LoadMoreData from './components/load-more-data/index.jsx';
 import { TreeView, sampleMenus } from './components/treeView/index.jsx';
 import Backdrop from './components/Backdrop.jsx';
 import QrCodeGenerator from './components/qr-code-generator/index.jsx';
+import LightDarkMode from './components/light-dark-mode/index.jsx';
 
 function App() {
   const [showTreeView, setShowTreeView] = useState(false);
@@ -44,6 +45,9 @@ function App() {
         </div>
         <div id="qr-code">
           <QrCodeGenerator />
+        </div>
+        <div id="theme-switch">
+          <LightDarkMode />
         </div>
       </main>
     </div>
