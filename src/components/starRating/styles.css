@@ -5,12 +5,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    90deg,
-    rgb(49, 9, 102) 0%,
-    rgb(45, 47, 187) 35%,
-    rgb(107, 255, 203) 100%
-  );
 }
 
 .active {

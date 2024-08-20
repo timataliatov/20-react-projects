@@ -7,6 +7,7 @@ import ImageSlider from './components/imageSlider/index.jsx';
 import LoadMoreData from './components/load-more-data/index.jsx';
 import { TreeView, sampleMenus } from './components/treeView/index.jsx';
 import Backdrop from './components/Backdrop.jsx';
+import QrCodeGenerator from './components/qr-code-generator/index.jsx';
 
 function App() {
   const [showTreeView, setShowTreeView] = useState(false);
@@ -40,6 +41,9 @@ function App() {
         </div>
         <div id="load-more">
           <LoadMoreData />
+        </div>
+        <div id="qr-code">
+          <QrCodeGenerator />
         </div>
       </main>
     </div>
