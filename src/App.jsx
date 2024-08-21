@@ -10,6 +10,7 @@ import Backdrop from './components/Backdrop.jsx';
 import QrCodeGenerator from './components/qr-code-generator/index.jsx';
 import LightDarkMode from './components/light-dark-mode/index.jsx';
 import ScrollIndicator from './components/scroll-indicator/index.jsx';
+import Tabs from './components/custom-tabs/index.jsx';
 
 function App() {
   const [showTreeView, setShowTreeView] = useState(false);
@@ -25,6 +26,16 @@ function App() {
       <TreeView menus={sampleMenus} isVisible={showTreeView} />
 
       <main className="pt-16">
+        <div id="tabs">
+          <Tabs
+            tabsContent={[
+              { label: 'About' },
+              { label: 'Skills' },
+              { label: 'Contact' },
+            ]}
+          />
+        </div>
+
         <div id="accordion">
           <Accordion />
         </div>
