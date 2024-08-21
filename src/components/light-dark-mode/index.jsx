@@ -63,10 +63,10 @@ const LightDarkMode = () => {
           Hello World!
         </h1>
         <p className="text-xl mb-8 max-w-md">
-          Welcome to this dynamic theme demo. Toggle the sun/moon to switch
-          themes, and use the play/pause button to control the gradient
-          animation.
+          Toggle the sun/moon to switch themes, and use the play/pause button to
+          control the gradient animation.
         </p>
+        <p>[sometimes it's not starting, so make sure to refresh the page]</p>
         <div className="grid grid-cols-2 gap-10 pt-24">
           <div
             className={`p-12 rounded-lg ${
@@ -87,7 +87,7 @@ const LightDarkMode = () => {
         </div>
       </div>
       <footer className="z-10 mt-8 text-sm opacity-70">
-        © 2023 Dynamic Theme Demo. All rights reserved.
+        © 2024 All rights reserved. [20RC by TALIATOV]
       </footer>
     </div>
   );

@@ -9,6 +9,7 @@ import { TreeView, sampleMenus } from './components/treeView/index.jsx';
 import Backdrop from './components/Backdrop.jsx';
 import QrCodeGenerator from './components/qr-code-generator/index.jsx';
 import LightDarkMode from './components/light-dark-mode/index.jsx';
+import ScrollIndicator from './components/scroll-indicator/index.jsx';
 
 function App() {
   const [showTreeView, setShowTreeView] = useState(false);
@@ -27,12 +28,15 @@ function App() {
         <div id="accordion">
           <Accordion />
         </div>
+
         <div id="star-rating">
           <StarRating />
         </div>
+
         <div id="color-generator">
           <RandomColors />
         </div>
+
         <div id="image-slider">
           <ImageSlider
             url={'https://picsum.photos/v2/list'}
@@ -40,12 +44,19 @@ function App() {
             limit={10}
           />
         </div>
+
         <div id="load-more">
           <LoadMoreData />
         </div>
+
         <div id="qr-code">
           <QrCodeGenerator />
         </div>
+
+        <div id="scroll-indicator">
+          <ScrollIndicator url={'https://dummyjson.com/products?limit=20'} />
+        </div>
+
         <div id="theme-switch">
           <LightDarkMode />
         </div>
