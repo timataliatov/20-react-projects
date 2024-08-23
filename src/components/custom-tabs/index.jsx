@@ -26,12 +26,12 @@ export default function Tabs({ tabsContent, onChange }) {
 
   return (
     <div className="w-full min-h-screen pt-48">
-      <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+      <div className="max-w-4xl mx-auto bg-white rounded-md shadow-md overflow-hidden">
         <div className="flex justify-around p-4 bg-gray-600">
           {tabsContent.map((tabItem, index) => (
             <button
               key={tabItem.label}
-              className={`py-2 px-6 font-medium text-sm focus:outline-none transition-all duration-300 flex items-center space-x-2 rounded-full ${
+              className={`py-2 px-6 font-medium text-sm focus:outline-none transition-all duration-700 flex items-center space-x-2 rounded-md ${
                 activeTab === index
                   ? 'bg-white text-pink-600 shadow-md transform scale-105'
                   : 'text-white hover:bg-pink-300'
@@ -45,7 +45,7 @@ export default function Tabs({ tabsContent, onChange }) {
         </div>
         <div className="p-6">
           {activeTab === 0 && (
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col justify-center">
               <h2 className="text-2xl font-bold text-pink-600">About Me</h2>
               <p className="text-gray-700">
                 Hello! I'm a passionate web developer with a keen interest in
@@ -63,7 +63,7 @@ export default function Tabs({ tabsContent, onChange }) {
             </div>
           )}
           {activeTab === 1 && (
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col justify-center">
               <h2 className="text-2xl font-bold text-pink-600">My Skills</h2>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
                 <li>JavaScript (ES6+)</li>
@@ -78,7 +78,7 @@ export default function Tabs({ tabsContent, onChange }) {
             </div>
           )}
           {activeTab === 2 && (
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col justify-center">
               <h2 className="text-2xl font-bold text-pink-600">Contact Me</h2>
               <p className="text-gray-700">
                 I'm always open to new opportunities and collaborations. Feel

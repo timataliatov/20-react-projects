@@ -19,7 +19,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "file-saver": "^2.0.5",
-    "lucide-react": "^0.428.0",
+    "lucide-react": "^0.429.0",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
